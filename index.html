@@ -44,7 +44,7 @@
 <!-- The body tag contains the elements that visitors to our page will see. -->
     <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
-        Max Hegder
+        Max Hegder's Potfolio
     </h1>
     <p style="margin-top: 0px; color: darkblue">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
@@ -87,12 +87,15 @@
     <h2>
         Week 2: 2 Visualisations in Vega-lite
     </h2>
-    <p>
-        Chart 1:
-    </p>
+    <h3>
+     Chart 1 :   
+    </h3>
     </div>
     <figure id="Location4" style="width: 100%; height: 400px;"></figure>
-    
+    <h3>
+        Chart 2 :
+    </h3>
+    <figure id="Location5" style="width: 100%; height: 400px;"></figure>
 </section>
      <script>
        
@@ -115,9 +118,14 @@
         vegaEmbed('#Location3', figure_3_spec)
 
 
-          let figure_4_spec ="https://raw.githubusercontent.com/MaxHedger/MaxHedger.github.io/refs/heads/main/wk2_chart.json"
+          let figure_4_spec ="https://raw.githubusercontent.com/MaxHedger/MaxHedger.github.io/refs/heads/main/wk2_chart.json";
 
         vegaEmbed('#Location4', figure_4_spec)
+
+
+          let figure_5_spec =""
+
+        vegaEmbed('#Location5', figure_5_spec)
      </script>
 
 </body>
