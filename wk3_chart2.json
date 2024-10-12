@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     "title": {
+      "text": "International trade | UK",
+      "anchor": "start",
+      "subtitle": "Total trade, £ million GBP | Source: ONS through ECO API ",
+      "fontSize": "14",
+      "subtitleFontSize": "12",
+      "color": "mediumblue",
+      "subtitleColor": "black"
+    },
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/MaxHedger/MaxHedger.github.io/refs/heads/main/wk3_trade-data.csv"},
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal","axis": {"title":"","grid": false}},
+      "y": {"field": "value", "type": "quantitative","axis": {"title":""}},
+      "color": {"field": "category", "type": "nominal", "title": ""}
+    }, 
+    "height": 300,
+    "width": 750,
+    "autosize": {
+      "type": "fit",
+      "contains": "padding"
+  }}
+  
