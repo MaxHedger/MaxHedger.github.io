@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": {
+      "text": "GDP Growth Rates | G7 countries",
+      "anchor": "start",
+      "subtitle": "GDP, Anual growth rate, % | Source: IMF ",
+      "fontSize": "14",
+      "subtitleFontSize": "12",
+      "color": "green",
+      "subtitleColor": "black"
+    },
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {"url": "https://raw.githubusercontent.com/MaxHedger/MaxHedger.github.io/refs/heads/main/GDP_Growth_data_WK3.csv"},
+    "transform": [
+      {"filter":"datum.country != ''"},
+          {"filter":"datum.country != 'Japan'"}
+   ],
+    "mark": {
+      "type": "line"
+    },
+    "height": 500,
+    "width": 750,
+    "autosize": {
+      "type": "fit",
+      "contains": "padding"
+    },
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "axis": {"title":"","grid": false}},
+      "y": {"field": "value", "type": "quantitative",  "axis": {"title":""}},
+   "color": {"field": "country", "type": "nominal"},
+    "strokeWidth": {
+        "condition": {
+          "test": {"field": "country", "oneOf": ["UK"]},
+          "value": 3}, "value" :1 }
+      }
+   }
+    
